@@ -47,8 +47,6 @@ The tracefile for this is "spoofed.pcap"
 Here, eth0 is the interface chosen by defaultand all requests will be spoofed as indicated in the pcap file "allSpoofed.pcap"
 
 
-
-
 # DNS Spoof Detection:
 
 The program can be run using the command "go run dnsdetect.go -i interface -r tracefile [expression]"
@@ -125,9 +123,6 @@ Answer1 13.90.213.204 Answer2 172.25.90.238
 2021-04-09 16:13:56.026009 -0400 EDT DNS poisoning attempt
 TXID 0xeee6 Request www.gotomeeting.com
 Answer1 wildcard-san.logmein.com.edgekey.net e15661.b.akamaiedge.net 96.7.74.73 96.7.74.43 Answer2 172.25.90.238
-
-
-=> Also, I have added another dnsdetection go file in the Another folder where it prints if there were any errors while decoding the layers or checking for layers which are not printed in the original go file. But the purpose is the same.
 
 
 References:
